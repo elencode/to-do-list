@@ -1,0 +1,108 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'Open sans', sans-serif;
+}
+.container {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* li * {
+  float: left;
+} */
+li {
+  /* clear:both; */
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 3px;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* Search Task */
+#search-task input {
+    margin: 20px auto;
+    width: 250px;
+}
+
+/*New Task */
+input#new-task {
+    width: 250px;
+}
+
+/* Task list */
+li {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li  input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+}
+li label {
+   font-size: 16px;
+   width: 250px;
+   padding: 0 10px;
+}
+
+li .edit {
+    color: green;
+}
+ 
+li .delete{
+    color: red;
+} 
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display: none;
+}
+
+ul li.editMode input[type=text] {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+ul li.editMode label {
+  display:none;
+}
